@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Boostrap Library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <title>Introvert Heaven</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" width="80" height="auto" class="d-inline-block align-middle ml-2" alt="">
+            <strong>Introvert's Heaven</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item active mr-4">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signInModalCenter">LogIn</a>
+                </li>
+                <li class="nav-item ml-1 mr-5">
+                    <a class="btn btn-primary px-3" href="#" role="button" data-toggle="modal"
+                        data-target="#signUpModalCenter">SignUp</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Homepage Section -->
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <h1><strong>Embrace your introversion. <br> Join a community that understands.</strong></h1>
+                <p class="lead mt-5">An online platform dedicated to providing a safe and anonymous space for introverts
+                    to share their problems, stories, and experiences</p>
+                <a class="btn btn-primary btn-lg px-4 mt-3" data-toggle="modal" data-target="#signInModalCenter" role="button">Get Started</a>
+            </div>
+            <div class="col-md-6">
+                <img src="./images/Hero Image.png" class="img-fluid align-middle mb-0" alt="Responsive image">
+                <img src="./images/Dotted Shape.png" height="50" width="auto" class="ml-5 mt-2" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="signUpModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close text-right mr-2 mt-1" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <h3 class="card-title text-center mt-0 mb-2">
+                    <img src="./images/logo.png" width="120" height="auto" alt="">
+                </h3>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Username</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your username">
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="inputEmail" placeholder="Your email address"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="inputPassword" placeholder="Your password">
+                        </div>
+                        <a type="submit" class="btn btn-primary btn-block" id="btn1">Sign Up</a>
+
+                        <div class="text-center my-3">
+                            Or Connect With
+                        </div>
+
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-md-4 my-1">
+                                    <button type="submit" class="btn btn-primary btn-block" id="facebook"><img
+                                            src="./images/icons08-facebook-48.png" class="m-0 p-0" width="40"
+                                            height="40" alt="img"></button>
+                                </div>
+                                <div class="col-md-4 my-1">
+                                    <button type="submit" class="btn btn-block" id="twitter"><img
+                                            src="./images/icons8-twitter-squared-48.png" class="m-0 p-0" width="40"
+                                            height="40" alt="img"></button>
+                                </div>
+                                <div class="col-md-4 my-1">
+                                    <button type="submit" class="btn btn-block" id="google"><img
+                                            src="./images/icons8-google-plus-48.png" class="m-0 p-0" width="40"
+                                            height="40" alt="img"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SignIn Modal -->
+    <div class="modal fade" id="signInModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <button type="button" class="close text-right mr-2 mt-1" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <h3 class="card-title text-center mt-0 mb-2">
+                    <img src="./images/logo.png" width="120" height="auto" alt="">
+                </h3>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="inputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
+                            <input type="password" class="form-control form-control-sm" id="inputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="btn2">Sign in</button>
+
+                        <div class="text-center my-3">
+                            Or SignIn With
+                        </div>
+
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-md-4 my-1">
+                                    <button type="submit" class="btn btn-primary btn-block" id="facebook"><img
+                                            src="./images/icons08-facebook-48.png" class="m-0 p-0" width="40"
+                                            height="40" alt="img"></button>
+                                </div>
+                                <div class="col-md-4 my-1">
+                                    <button type="submit" class="btn btn-block" id="twitter"><img
+                                            src="./images/icons8-twitter-squared-48.png" class="m-0 p-0" width="40"
+                                            height="40" alt="img"></button>
+                                </div>
+                                <div class="col-md-4 my-1">
+                                    <button type="submit" class="btn btn-block" id="google"><img
+                                            src="./images/icons8-google-plus-48.png" class="m-0 p-0" width="40"
+                                            height="40" alt="img"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sign-up mt-3">
+                            Don't have an account? <a href="#" data-toggle="modal"
+                            data-target="#signUpModalCenter">Create One</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Own Script File -->
+    <script type="module" src="signUp.js"></script>
+    <script type="module" src="signIn.js"></script>
+
+    <!-- Boostrap for JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

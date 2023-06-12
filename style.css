@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#twitter{
+    background-color: #00acee;
+    padding: 0px;
+}
+
+#facebook{
+    background-color: #3f5894;
+    padding: 0px;
+}
+
+#google{
+    background-color: #dd4b39;
+    padding: 0px;
+}
